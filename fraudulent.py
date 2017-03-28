@@ -38,9 +38,9 @@ class FraudulentDomain(object):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--url", help="Fraudulent Domain Text Format URL")
-    parser.add_argument("--vendor", help="Fraudulent Domain Provider")
-    parser.add_argument("--product", help="Fraudulent Domain Service")
+    parser.add_argument("-u", "--url", help="Fraudulent Domain Text Format URL", required=True)
+    parser.add_argument("-u", "--vendor", help="Fraudulent Domain Provider", required=True)
+    parser.add_argument("-u", "--product", help="Fraudulent Domain Service", required=True)
 
     args = parser.parse_args()
 
